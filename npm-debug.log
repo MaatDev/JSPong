@@ -1,0 +1,150 @@
+info it worked if it ends with ok
+verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+verbose cli   'install' ]
+info using npm@1.1.12
+info using node@v0.6.14
+verbose C:\Program Files (x86)\nodejs\\node.exe node symlink
+verbose config file C:\Users\EruKun\.npmrc
+verbose config file C:\Program Files (x86)\nodejs\etc\npmrc
+verbose config file C:\Program Files (x86)\nodejs\node_modules\npm\npmrc
+verbose mkdir done: C:\Users\EruKun\AppData\Roaming\npm 755
+verbose mkdir done: C:\Users\EruKun\pong\Pong 755
+verbose caching C:\Users\EruKun\pong\Pong\package.json
+verbose loadDefaults Pong@1.0.0
+verbose readDependencies: using package.json deps
+verbose where, deps [ 'C:\\Users\\EruKun\\pong\\Pong', [ 'express' ] ]
+verbose from cache C:\Users\EruKun\pong\Pong\package.json
+info preinstall Pong@1.0.0
+verbose from cache C:\Users\EruKun\pong\Pong\package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'express@2.2.0', null ]
+silly cache add: name, spec, args [ undefined, 'express@2.2.0', [ 'express@2.2.0', null ] ]
+verbose parsed url { pathname: 'express@2.2.0',
+verbose parsed url   path: 'express@2.2.0',
+verbose parsed url   href: 'express@2.2.0' }
+silly cache add: name, spec, args [ 'express', '2.2.0', [ 'express', '2.2.0' ] ]
+verbose parsed url { pathname: '2.2.0', path: '2.2.0', href: '2.2.0' }
+verbose addNamed [ 'express', '2.2.0' ]
+verbose addNamed [ '2.2.0', '2.2.0' ]
+verbose raw, before any munging express/2.2.0
+verbose url resolving [ 'https://registry.npmjs.org/', './express/2.2.0' ]
+verbose url resolved https://registry.npmjs.org/express/2.2.0
+verbose etag "5VSXNB976KX9KAZUUOV90EK0I"
+http GET https://registry.npmjs.org/express/2.2.0
+http 200 https://registry.npmjs.org/express/2.2.0
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"572K4L4JKQD66YTZQEJU9UARX"',
+silly get cb     date: 'Mon, 26 Mar 2012 03:50:48 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '1008' } ]
+verbose mkdir done: C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0 755
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7600',
+verbose bin dist   { shasum: 'ab38a7eaad67a1c28495021a798d234086d73dea',
+verbose bin dist     tarball: 'http://registry.npmjs.org/express/-/express-2.2.0.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-2.2.0.tgz',
+verbose addRemoteTarball   'ab38a7eaad67a1c28495021a798d234086d73dea' ]
+verbose mkdir (expected) error ENOENT, stat 'C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518'
+verbose mkdir (expected) error ENOENT, stat 'C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014'
+verbose mkdir done: C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014 755
+verbose fetch to C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\tmp.tgz
+verbose mkdir done: C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014 755
+http GET https://registry.npmjs.org/express/-/express-2.2.0.tgz
+http 200 https://registry.npmjs.org/express/-/express-2.2.0.tgz
+silly updated sha bytes 25441
+info shasum ab38a7eaad67a1c28495021a798d234086d73dea
+info shasum C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\tmp.tgz
+verbose mkdir (expected) error ENOENT, stat 'C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package'
+verbose mkdir done: C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package
+silly gunzTarPerm modes [ '755', '644' ]
+verbose gunzed C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package
+verbose caching C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package\package.json
+verbose loadDefaults express@2.2.0
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package\package.json
+verbose pack C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package
+verbose pack C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package.tgz
+silly makeList C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package
+silly dir, dirLen [ 'C:\\Users\\EruKun\\AppData\\Local\\Temp\\npm-1332733849518\\1332733849519-0.47213795222342014\\package',
+silly dir, dirLen   95 ]
+verbose tarball C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package.tgz
+verbose parent C:\Users\EruKun\AppData\Local\Temp\npm-1332733849518\1332733849519-0.47213795222342014\package
+verbose mkdir (expected) error ENOENT, stat 'C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package'
+verbose mkdir done: C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package
+silly gunzTarPerm modes [ '755', '644' ]
+silly modified mode [ '.npmignore', 438, 420 ]
+silly modified mode [ 'bin/', 438, 493 ]
+silly modified mode [ 'bin/express', 438, 420 ]
+silly modified mode [ 'History.md', 438, 420 ]
+silly modified mode [ 'index.js', 438, 420 ]
+silly modified mode [ 'lib/', 438, 493 ]
+silly modified mode [ 'lib/express.js', 438, 420 ]
+silly modified mode [ 'lib/http.js', 438, 420 ]
+silly modified mode [ 'lib/https.js', 438, 420 ]
+silly modified mode [ 'lib/request.js', 438, 420 ]
+silly modified mode [ 'lib/response.js', 438, 420 ]
+silly modified mode [ 'lib/utils.js', 438, 420 ]
+silly modified mode [ 'lib/view/', 438, 493 ]
+silly modified mode [ 'lib/view/partial.js', 438, 420 ]
+silly modified mode [ 'lib/view/view.js', 438, 420 ]
+silly modified mode [ 'lib/view.js', 438, 420 ]
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly modified mode [ 'Makefile', 438, 420 ]
+silly modified mode [ 'package.json', 438, 420 ]
+silly modified mode [ 'Readme.md', 438, 420 ]
+verbose gunzed C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package
+verbose caching C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package\package.json
+verbose loadDefaults express@2.2.0
+silly updated sha bytes 25550
+info shasum 47015445043c37cacf81ff9d188500829be44481
+info shasum C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package.tgz
+verbose from cache C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package\package.json
+verbose chmod C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package.tgz 644
+silly skipping chown for windows C:\Users\EruKun\AppData\Roaming\npm-cache\express\2.2.0\package.tgz
+silly resolved [ { name: 'express',
+silly resolved     description: 'Sinatra inspired web development framework',
+silly resolved     version: '2.2.0',
+silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+silly resolved        { name: 'Aaron Heckmann',
+silly resolved          email: 'aaron.heckmann+github@gmail.com' },
+silly resolved        { name: 'Ciaran Jessup', email: 'ciaranj@gmail.com' },
+silly resolved        { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' } ],
+silly resolved     dependencies: { connect: '>= 1.2.0 < 2.0.0', mime: '>= 0.0.1', qs: '>= 0.0.6' },
+silly resolved     keywords: [ 'framework', 'sinatra', 'web', 'rest', 'restful' ],
+silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express.git' },
+silly resolved     main: 'index',
+silly resolved     bin: { express: './bin/express' },
+silly resolved     engines: { node: '>= 0.4.1 < 0.5.0' },
+silly resolved     _id: 'express@2.2.0',
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: false,
+silly resolved     _npmVersion: '1.1.12',
+silly resolved     _nodeVersion: 'v0.6.14',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '47015445043c37cacf81ff9d188500829be44481' },
+silly resolved     _from: 'express@2.2.0' } ]
+info into C:\Users\EruKun\pong\Pong express@2.2.0
+info installOne express@2.2.0
+ERR! Unsupported
+ERR! Not compatible with your version of node/npm: express@2.2.0
+ERR! Required: {"node":">= 0.4.1 < 0.5.0"}
+ERR! Actual:   {"npm":"1.1.12","node":"0.6.14"}
+ERR! 
+ERR! System Windows_NT 6.1.7600
+ERR! command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+ERR! cwd C:\Users\EruKun\pong\Pong
+ERR! node -v v0.6.14
+ERR! npm -v 1.1.12
+ERR! code ENOTSUP
+ERR! message Unsupported
+ERR! errno {}
+verbose exit [ 1, true ]
