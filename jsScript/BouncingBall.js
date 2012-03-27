@@ -40,7 +40,7 @@ function BouncingBall(width, height, posX, posY){
 		
 		//console.log("start draw");
 		
-		//Dibujar el c�rculo
+		//Dibujar el círculo
 		
 		canvas.beginPath();
 		canvas.fillStyle="#0157ff";
@@ -61,7 +61,7 @@ function BouncingBall(width, height, posX, posY){
 	};
 	
 	this.move = function(){
-		//Cambiar de posici�n seg�n la velocidad de ajuste
+		//Cambiar de posición según la velocidad de ajuste
 		
 		this.posX+=this.velocityX;
 		this.posY+=this.velocityY;
