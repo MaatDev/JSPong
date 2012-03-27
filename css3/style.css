@@ -1,5 +1,31 @@
 #contenedor {
-  width: 300px;
-  height: 250px;
-  margin: auto;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-250px;
+  margin-left:-250px;
+}
+
+#contenedor button {
+	position:absolute;
+	top:-30px;
+}
+#contenedor canvas {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#contenedor canvas#canvasBall {
+	z-index : 0;
+}
+
+#contenedor canvas#canvaspalletPlayer {
+	z-index: 1;
+}
+
+#contenedor canvas#canvaspalletPC {
+	z-index: 2;
 }
