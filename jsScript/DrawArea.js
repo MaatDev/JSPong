@@ -28,7 +28,7 @@ function init(){
 	drawAreapalletPlayer = canvaspalletPlayer.getContext('2d');
 	drawAreapalletPC = canvaspalletPC.getContext('2d');
 	
-	//Definir el tama�o del canvas
+	//Definir el tamaño del canvas
 	defineDrawAreaSize(windowHeight,windowWdith);
 	
 	canvasBall.style.border = "red 1px solid";
@@ -79,7 +79,7 @@ function drawAll(){
 		
 }
 
-//Definir el tama�o del canvas program�ticamente
+//Definir el tamaño del canvas programáticamente
 function defineDrawAreaSize( height, width){
 
 	canvasBall.height = height;
@@ -100,24 +100,24 @@ function defineDrawAreaSize( height, width){
 	
 }
 
-//Funci�n gen�rica para borrar todos los objetos del canvas
+//Funcióm genérica para borrar todos los objetos del canvas
 function clearCanvas( canvas ){
 	canvas.clearRect(0,0,canvas.width+1,canvas.height+1);
 }
 
-//Acci�n a realizar cuando ocurre evento de flecha arriba
+//Acción a realizar cuando ocurre evento de flecha arriba
 function pressUp(){
 	clearCanvas(drawAreapalletPlayer);
 	palletPlayer.drawGoUp(drawAreapalletPlayer);
 }
 
-//Acci�n a realizar cuando ocurre evento de flecha abajo
+//Acción a realizar cuando ocurre evento de flecha abajo
 function pressDown(){
 	clearCanvas(drawAreapalletPlayer);
 	palletPlayer.drawGoDown(drawAreapalletPlayer);
 }
 
-//Validar la colisi�n
+//Validar la colisión
 function validateCollision( varpallet, varBall){
 	var result = detectConllisionRectangleCircle( varpallet, varBall);
 	
@@ -126,7 +126,7 @@ function validateCollision( varpallet, varBall){
 		var toto = Math.abs(varpallet.posY - varBall.posY);
 		var part = varpallet.height/5;		
 
-		//Cambiar el �ngulo de rebote para cambiar la velocidad para cada direcci�n seg�n donde choque a la paleta
+		//Cambiar el ángulo de rebote para cambiar la velocidad para cada dirección según donde choque a la paleta
 		
 		if( toto >= 0 || toto <= part ){
 			varBall.changeAngle(12.5);
