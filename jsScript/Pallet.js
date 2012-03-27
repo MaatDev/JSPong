@@ -1,4 +1,4 @@
-function getNewpallet(width, height, posX, posY){
+function Pallet(width, height, posX, posY){
 	
 	this.screenWidth = width;
 	this.screenHeight = height;
@@ -18,7 +18,7 @@ function getNewpallet(width, height, posX, posY){
 		canvas.fillRect(this.posX,this.posY,this.width,this.height);
 
 	
-		//No pasarse del límite
+		//No pasarse del lï¿½mite
 		//if( this.posX < (1 + this.radius) || this.posX > this.screenWidth - (1 + this.radius) ){
 		//	this.velocityX = -this.velocityX;
 		//}
@@ -26,7 +26,7 @@ function getNewpallet(width, height, posX, posY){
 			//this.velocityY = -this.velocityY;
 		//}
 
-		//Cambiar de posición según la velocidad de ajuste
+		//Cambiar de posiciï¿½n segï¿½n la velocidad de ajuste
 		
 		//this.posX+=this.velocityX;
 		//this.posY+=this.velocityY;
