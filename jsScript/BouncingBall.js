@@ -1,4 +1,4 @@
-function getNewBouncingBall(width, height, posX, posY){
+function BouncingBall(width, height, posX, posY){
 	
 	this.screenWidth = width;
 	this.screenHeight = height;
@@ -40,7 +40,7 @@ function getNewBouncingBall(width, height, posX, posY){
 		
 		//console.log("start draw");
 		
-		//Dibujar el círculo
+		//Dibujar el cÃ­rculo
 		
 		canvas.beginPath();
 		canvas.fillStyle="#0157ff";
@@ -61,7 +61,7 @@ function getNewBouncingBall(width, height, posX, posY){
 	};
 	
 	this.move = function(){
-		//Cambiar de posición según la velocidad de ajuste
+		//Cambiar de posiciÃ³n segÃºn la velocidad de ajuste
 		
 		this.posX+=this.velocityX;
 		this.posY+=this.velocityY;

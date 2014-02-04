@@ -28,7 +28,7 @@ function init(){
 	drawAreapalletPlayer = canvaspalletPlayer.getContext('2d');
 	drawAreapalletPC = canvaspalletPC.getContext('2d');
 	
-	//Definir el tama駉 del canvas
+	//Definir el tama帽o del canvas
 	defineDrawAreaSize(windowHeight,windowWdith);
 	
 	canvasBall.style.border = "red 1px solid";
@@ -38,9 +38,9 @@ function init(){
 	console.log(drawAreaBall.height+" : "+drawAreaBall.width);
 	
 	//Inicializar los objetos a dibujar
-	ball = new getNewBouncingBall(drawAreaBall.width ,drawAreaBall.height, windowWdith/2,windowHeight/2);
-	palletPlayer = new getNewpallet(drawAreapalletPlayer.width , drawAreapalletPlayer.height,3 ,3);
-	palletPC = new getNewpallet(drawAreapalletPC.width , drawAreapalletPC.height, windowWdith - 3 - windowWdith/20,425);
+	ball = new BouncingBall(drawAreaBall.width ,drawAreaBall.height, windowWdith/2,windowHeight/2);
+	palletPlayer = new Pallet(drawAreapalletPlayer.width , drawAreapalletPlayer.height,3 ,3);
+	palletPC = new Pallet(drawAreapalletPC.width , drawAreapalletPC.height, windowWdith - 3 - windowWdith/20,425);
 	
 	ball.draw(drawAreaBall);
 	palletPlayer.draw(drawAreapalletPlayer);
@@ -79,7 +79,7 @@ function drawAll(){
 		
 }
 
-//Definir el tama駉 del canvas program醫icamente
+//Definir el tama帽o del canvas program谩ticamente
 function defineDrawAreaSize( height, width){
 
 	canvasBall.height = height;
@@ -100,24 +100,24 @@ function defineDrawAreaSize( height, width){
 	
 }
 
-//Funci髇 gen閞ica para borrar todos los objetos del canvas
+//Funci贸m gen茅rica para borrar todos los objetos del canvas
 function clearCanvas( canvas ){
 	canvas.clearRect(0,0,canvas.width+1,canvas.height+1);
 }
 
-//Acci髇 a realizar cuando ocurre evento de flecha arriba
+//Acci贸n a realizar cuando ocurre evento de flecha arriba
 function pressUp(){
 	clearCanvas(drawAreapalletPlayer);
 	palletPlayer.drawGoUp(drawAreapalletPlayer);
 }
 
-//Acci髇 a realizar cuando ocurre evento de flecha abajo
+//Acci贸n a realizar cuando ocurre evento de flecha abajo
 function pressDown(){
 	clearCanvas(drawAreapalletPlayer);
 	palletPlayer.drawGoDown(drawAreapalletPlayer);
 }
 
-//Validar la colisi髇
+//Validar la colisi贸n
 function validateCollision( varpallet, varBall){
 	var result = detectConllisionRectangleCircle( varpallet, varBall);
 	
@@ -126,7 +126,7 @@ function validateCollision( varpallet, varBall){
 		var toto = Math.abs(varpallet.posY - varBall.posY);
 		var part = varpallet.height/5;		
 
-		//Cambiar el 醤gulo de rebote para cambiar la velocidad para cada direcci髇 seg鷑 donde choque a la paleta
+		//Cambiar el 谩ngulo de rebote para cambiar la velocidad para cada direcci贸n seg煤n donde choque a la paleta
 		
 		if( toto >= 0 || toto <= part ){
 			varBall.changeAngle(12.5);
